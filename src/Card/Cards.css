@@ -1,0 +1,168 @@
+.global-div {
+    display: flex;
+}
+
+.header-div{
+    height: 100vh;
+    position: relative;
+}
+
+.header-div> button {
+    border-radius: 3px;
+    margin-left: 50px;
+    margin-top:15px ;
+}
+
+.buttons{
+    padding: 15px 0;
+}
+
+.line {
+    width: 100%;
+    border-top: 2px solid grey;
+}
+
+.cards-div {
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 200px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.cards-div p {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.buttons> button{
+ padding: 7px;
+ border-radius: 3px;
+ text-align: center;
+ cursor: pointer;
+ box-shadow: 1px 1px  rgb(0,0,255);
+}
+
+.buttons>:first-child  {
+   margin-left: 25px;
+}
+
+.buttons>:last-child  {
+   margin-left: 45px;
+}
+
+.buttons button:hover{
+    background:rgb(0, 0, 255);
+}
+
+.cards-div button {
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    background:none;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.cards-div button:hover{
+    color: red;
+}
+
+.cards {
+   width: 1000px ;
+   height: calc(100vh - 99px);
+   overflow-y: auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.card {
+    width: 400px;
+}
+
+.right-side-text-div{
+  margin: auto;
+  padding: 40px;
+  font-family: 'Lexend Deca', sans-serif; 
+}
+
+.right-side-text  {
+    padding: 30px 0 30px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid gray;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.right-right {
+    width: 50px !important;
+    height: 100vh;
+    border-left: 1px solid grey;
+    
+}
+
+@media (max-width:1153px) {
+  
+.right-side-text {
+    font-size: 0.8rem;
+}
+}
+@media (max-width:1175px) {
+
+    .cards {
+    width: 800px;
+}
+}
+
+@media (max-width:1010px) {
+    .cards  {
+       max-width: 900px;
+    }
+.right-side-text-div {
+    padding: 0px;
+}
+}
+
+@media (max-width:560px) {
+   .right-side-text {
+      overflow:hidden;
+      margin-top:0px;
+   }
+  
+.right-side-text-div{
+    padding: 0px;
+    margin-left: 5px;
+    margin-top: 50px;
+}
+
+}
+
+@media (max-width:905px) {
+    .cards  {
+       width: 400px;
+       margin: 0 auto;
+    }
+   .cards-div {
+    width: 100px;
+    height: 100px;
+   }
+  
+} 
+
+
